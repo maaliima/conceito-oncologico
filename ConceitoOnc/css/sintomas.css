@@ -1,0 +1,76 @@
+/* Página sintomas */
+#pagina-sintomas {
+    background: linear-gradient(to right, #8b9c6f, #e6f0d5);
+    padding: 120px 8% 60px; /* espaço extra no topo p/ não ficar embaixo do header */
+}
+
+.titulo-sintomas {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #2c4c0c;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.container-sintomas {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sintoma {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #8b9c6f;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.sintoma:hover {
+    transform: translateY(-3px);
+}
+
+.sintoma h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.sintoma p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Bolinhas */
+.bolinha {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.bolinha.azul    { background-color: #00c8ff; }
+.bolinha.verde   { background-color: #00ff0d; }
+.bolinha.amarela { background-color: #fffb00; }
+.bolinha.laranja { background-color: #ff9100; }
+.bolinha.vermelha { background-color: #e74c3c; }
+.bolinha.cinza   { background-color: #787f7f; }
+
+#info-sintomas {
+    background-color: #e6f0d5; /* tom claro para destaque */
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#info-sintomas p {
+    color: #2c4c0c;
+    font-size: 1.1rem;
+    font-weight: 500;
+}

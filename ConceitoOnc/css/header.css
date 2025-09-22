@@ -1,0 +1,97 @@
+header {
+    width: 100%;
+    padding: 15px 8%;
+    position: fixed; /* muda de sticky para fixed */
+    top: 0;
+    background: transparent; /* fundo translúcido */
+    z-index: 10; /* garante que fique acima do banner */
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    font-size: 24px;
+    color: #fcf6e6;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color: #2c4c0c;
+    border-bottom: 3px solid #2c4c0c;
+}
+
+#mobile_btn {
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar .btn-default {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile_nav_list .nav-item {
+        list-style: none;
+        text-align: center;
+    } 
+}
+
+.logo img {
+    height: 65px; /* ajuste o tamanho conforme necessário */
+    width: auto;
+    object-fit: contain;
+}
+
+/* Borda inferior fixa no header da página de sintomas */
+body.sintomas header {
+    box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header quando rolar para baixo */
+header.scrolled {
+    background-color: #dfe5d4; /* verde escuro translúcido */
+    backdrop-filter: blur(6px); /* leve efeito fosco moderno */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+

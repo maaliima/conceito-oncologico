@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flan de Goiaba</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/receita-detalhe.css">
+  <link rel="stylesheet" href="/css/footer.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header>
+      <nav id="navbar">
+          <ul id="nav_list">
+              <li class="nav-item"><a href="../index.html#inicio">Início</a></li>
+              <li class="nav-item"><a href="../index.html#guia-de-receitas">Receitas</a></li>
+              <li class="nav-item"><a href="../index.html#sobre-nos">Sobre Nós</a></li>
+          </ul>
+          <div class="logo">
+              <img src="../img/logo-oncvida.png" alt="Logo OncVida">
+          </div>
+          <button id="mobile_btn">
+              <i class="fa-solid fa-bars"></i>
+          </button>
+      </nav>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main id="receita">
+      <section class="container-receita">
+          <h1 class="titulo-receita">Gelatina de Frutas</h1>
+          <p class="descricao-receita">Uma sobremesa leve, refrescante e nutritiva, ideal para pacientes oncológicos.</p>
+          
+          <!-- FOTO -->
+          <div class="midia-receita">
+              <img src="/img/gelatina-de-frutas.jpg" alt="Flan de Goiaba" class="foto-receita">
+          </div>
+
+          <!-- INGREDIENTES -->
+          <div class="conteudo-receita">
+              <h2>Ingredientes</h2>
+              <ul>
+                  <li>1 lata de leite condensado</li>
+                  <li>1 lata de creme de leite</li>
+                  <li>1 copo de suco de goiaba concentrado</li>
+                  <li>1 envelope de gelatina sem sabor</li>
+              </ul>
+
+              <h2>Modo de Preparo</h2>
+              <ol>
+                  <li>Hidrate a gelatina conforme as instruções da embalagem.</li>
+                  <li>No liquidificador, bata o leite condensado, o creme de leite e o suco de goiaba.</li>
+                  <li>Adicione a gelatina e bata novamente.</li>
+                  <li>Coloque em uma forma untada e leve à geladeira por 4 horas.</li>
+              </ol>
+          </div>
+
+          <!-- VÍDEO -->
+          <div class="video-receita">
+              <h2>Assista ao Preparo</h2>
+              <iframe src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO" 
+                      title="YouTube video player" frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen></iframe>
+          </div>
+
+          
+      </section>
+  </main>
+
+
+
+  <script src="../js/script.js"></script>
+
+  <script>
+  const sr = ScrollReveal({
+    duration: 800,
+    distance: '50px',
+    easing: 'ease-out',
+    reset: false
+  });
+
+  // Título e descrição
+  sr.reveal('.titulo-receita', { origin: 'top' });
+  sr.reveal('.descricao-receita', { origin: 'top', delay: 150 });
+
+  // Foto
+  sr.reveal('.midia-receita', { origin: 'left', delay: 300 });
+
+  // Ingredientes e preparo
+  sr.reveal('.conteudo-receita', { origin: 'right', delay: 450 });
+
+  // Vídeo
+  sr.reveal('.video-receita', { origin: 'bottom', delay: 600 });
+</script>
+
+</body>
+</html>

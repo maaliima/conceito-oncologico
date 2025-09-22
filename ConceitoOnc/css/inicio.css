@@ -1,0 +1,84 @@
+#inicio {
+  height: 100vh;
+  background: url('/img/10.png') no-repeat center bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;     /* conteúdo no fundo */
+  align-items: center;           /* centraliza horizontalmente */
+  padding: 0 8% 60px;            /* espaço na base */
+  color: #fff;
+  text-align: center;
+}
+
+#cta {
+    z-index: 2;
+    max-width: 600px;
+}
+
+#cta-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 5rem !important;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #344a17;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+  margin-left: 0; /* remove alinhamento à esquerda */
+}
+
+.descricao {
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  max-width: 750px;
+  color: #344a17;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.btn-saiba-mais {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #344a17;
+    color: #fff5e9;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #69b872;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  #inicio {
+    background: none; /* remove o banner */
+    min-height: auto;
+    padding: 3rem 1.5rem;
+    
+  }
+
+  .titulo {
+    font-size: 7rem;
+    margin: 0;
+    white-space: normal; /* quebra o texto em várias linhas */
+  }
+
+  .descricao {
+    font-size: 0.8rem;
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+}

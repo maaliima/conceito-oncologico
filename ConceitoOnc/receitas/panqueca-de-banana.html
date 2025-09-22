@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flan de Goiaba</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/receita-detalhe.css">
+  <link rel="stylesheet" href="/css/footer.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+  
+  <!-- HEADER -->
+  <header>
+      <nav id="navbar">
+          <ul id="nav_list">
+              <li class="nav-item"><a href="../index.html#inicio">Início</a></li>
+              <li class="nav-item"><a href="../index.html#guia-de-receitas">Receitas</a></li>
+              <li class="nav-item"><a href="../index.html#sobre-nos">Sobre Nós</a></li>
+          </ul>
+          <div class="logo">
+              <img src="../img/logo-oncvida.png" alt="Logo OncVida">
+          </div>
+          <button id="mobile_btn">
+              <i class="fa-solid fa-bars"></i>
+          </button>
+      </nav>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main id="receita">
+      <section class="container-receita">
+          <h1 class="titulo-receita">Panqueca De Banana</h1>
+          <p class="descricao-receita">Uma sobremesa leve, refrescante e nutritiva, ideal para pacientes oncológicos.</p>
+          
+          <!-- FOTO -->
+          <div class="midia-receita">
+              <img src="/img/torta-banana.jpg" alt="Flan de Goiaba" class="foto-receita">
+          </div>
+
+          <!-- INGREDIENTES -->
+          <div class="conteudo-receita">
+              <h2>Ingredientes</h2>
+              <ul>
+                  <li>1 banana</li>
+                  <li>2 ovos</li>
+                  <li>2 colheres de aveia em flocos ou farelo</li>
+                  <li>1 colher de sopa de cacau em pó (opcional)</li>
+              </ul>
+
+              <h2>Modo de Preparo</h2>
+              <ol>
+                  <li>Com um garfo, amasse a banana e misture com os ovos.</li>
+                  <li>Acrescente a aveia e o cacau.</li>
+                  <li>Misture bem e leve a uma frigideira untada.</li>
+                  <li>Sugestões de combinações: Você pode comer sua panqueca com frutas, mel, pastade amendoim.</li>
+              </ol>
+          </div>
+
+          <!-- VÍDEO -->
+          <div class="video-receita">
+              <h2>Assista ao Preparo</h2>
+              <iframe src="https://www.youtube.com/embed/SEU_ID_DO_VIDEO" 
+                      title="YouTube video player" frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen></iframe>
+          </div>
+
+          
+      </section>
+  </main>
+
+<footer id="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="../img/logo-oncvida.png" alt="Logo OncVida">
+            <p>Receitas e informações de nutrição oncológica.</p>
+        </div>
+        
+        <div class="footer-links">
+            <h4>Links Rápidos</h4>
+            <ul>
+                <li><a href="../index.html#inicio">Início</a></li>
+                <li><a href="../index.html#guia-de-receitas">Receitas</a></li>
+                <li><a href="../index.html#sobre-nos">Sobre Nós</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-copy">
+        <p>&copy; 2025 OncVida - ETEC Parque Belém. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+  <script src="../js/script.js"></script>
+
+  <script>
+  const sr = ScrollReveal({
+    duration: 800,
+    distance: '50px',
+    easing: 'ease-out',
+    reset: false
+  });
+
+  // Título e descrição
+  sr.reveal('.titulo-receita', { origin: 'top' });
+  sr.reveal('.descricao-receita', { origin: 'top', delay: 150 });
+
+  // Foto
+  sr.reveal('.midia-receita', { origin: 'left', delay: 300 });
+
+  // Ingredientes e preparo
+  sr.reveal('.conteudo-receita', { origin: 'right', delay: 450 });
+
+  // Vídeo
+  sr.reveal('.video-receita', { origin: 'bottom', delay: 600 });
+</script>
+
+</body>
+</html>
