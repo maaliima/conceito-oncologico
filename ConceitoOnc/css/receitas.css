@@ -79,3 +79,25 @@
     color: #e9ffc5;
     font-weight: bold;
 }
+
+.prato.destaque {
+    border: 3px solid #344a17; /* borda verde escura */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    width: 250px;
+    height: 400x;
+    
+}
+
+.prato.destaque:hover {
+    transform: scale(1.09); /* mesma escala hover dos outros cards */
+}
+
+.prato.destaque .titulo-prato {
+    color: #ffb84d; /* título chamativo */
+}
+
+.prato.destaque .descricao-prato {
+    font-size: 1rem;
+    color: #fff;
+}
+

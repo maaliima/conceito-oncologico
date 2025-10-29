@@ -75,3 +75,13 @@
     border-radius: 10px;
     box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
 }
+
+/* Alinha e ajusta todas as imagens das receitas */
+.midia-receita img,
+.foto-receita {
+    width: 100%;       /* ocupa toda a largura do container */
+    max-width: 500px;  /* opcional: define limite máximo */
+    height: 380px;     /* altura fixa para uniformidade */
+    object-fit: cover; /* mantém proporção e corta excesso */
+    border-radius: 5px; /* opcional: cantos arredondados */
+}

@@ -1,11 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Smothie refrescante</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/receita-detalhe.css">
+  <link rel="stylesheet" href="/css/footer.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 <body>
-  Hello World!
+  
+  <!-- HEADER -->
+  <header>
+      <nav id="navbar">
+          <ul id="nav_list">
+              <li class="nav-item"><a href="../index.html#inicio">Início</a></li>
+              <li class="nav-item"><a href="../index.html#guia-de-receitas">Receitas</a></li>
+              <li class="nav-item"><a href="../index.html#sobre-nos">Sobre Nós</a></li>
+          </ul>
+          <div class="logo">
+              <img src="../img/logo-oncvida.png" alt="Logo OncVida">
+          </div>
+          <button id="mobile_btn">
+              <i class="fa-solid fa-bars"></i>
+          </button>
+      </nav>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main id="receita">
+      <section class="container-receita">
+          <h1 class="titulo-receita">Smothie refrescante</h1>
+          <p class="descricao-receita">Smothie refrescante</p>
+          
+          <!-- FOTO -->
+          <div class="midia-receita">
+              <img src="/img/smoothie.jpeg" alt="Flan de Goiaba" class="foto-receita">
+          </div>
+
+          <!-- INGREDIENTES -->
+          <div class="conteudo-receita">
+              <h2>Ingredientes</h2>
+              <ul>
+                  <li>1 copo americano de água</li>
+		  <li>1 polpa de abacaxi</li>
+		  <li>1 polpa de graviola</li>
+		  <li>4 folhas de hortelã</li>
+              </ul>
+
+              <h2>Modo de Preparo</h2>
+              <ol>
+                  <li>Bata todos os ingredientes no liquidificador até ficar uma mistura homogênea. Adoce como preferir</li>
+		  <li>Consuma em seguida.</li>
+              </ol>
+          </div>
+
+          <!-- VÍDEO -->
+          <div class="video-receita">
+              <h2>Assista ao Preparo</h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/GSl5xzFh0f4?si=aqRdJVxKOs9WOkT6" 
+		          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+              allowfullscreen></iframe>
+          </div>
+
+          
+      </section>
+  </main>
+
+
+
+  <script src="../js/script.js"></script>
+
+  <script>
+  const sr = ScrollReveal({
+    duration: 800,
+    distance: '50px',
+    easing: 'ease-out',
+    reset: false
+  });
+
+  // Título e descrição
+  sr.reveal('.titulo-receita', { origin: 'top' });
+  sr.reveal('.descricao-receita', { origin: 'top', delay: 150 });
+
+  // Foto
+  sr.reveal('.midia-receita', { origin: 'left', delay: 300 });
+
+  // Ingredientes e preparo
+  sr.reveal('.conteudo-receita', { origin: 'right', delay: 450 });
+
+  // Vídeo
+  sr.reveal('.video-receita', { origin: 'bottom', delay: 600 });
+</script>
+
 </body>
 </html>
